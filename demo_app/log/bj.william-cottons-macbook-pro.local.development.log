@@ -1,0 +1,618 @@
+I, [2008-06-25T17:27:07.113560 #15878]  INFO -- : STARTED
+I, [2008-06-25T17:27:07.130843 #15878]  INFO -- : job[1](./script/runner ActiveSupport::JSON.decode('null'); 
+         articles = Article.find(:all, :limit => 1000)
+         articles.each do |article|
+           puts article.title
+         end
+      ; Juggernaut.send_to_channels('alert('hey!');', ['user_123'])) - started
+I, [2008-06-25T17:27:07.187584 #15878]  INFO -- : job[1](./script/runner ActiveSupport::JSON.decode('null'); 
+         articles = Article.find(:all, :limit => 1000)
+         articles.each do |article|
+           puts article.title
+         end
+      ; Juggernaut.send_to_channels('alert('hey!');', ['user_123'])) - exit_status=10752
+I, [2008-06-25T17:27:11.197851 #15878]  INFO -- : job[2](./script/runner ActiveSupport::JSON.decode('null');    respond_to do |format|
+     format.bjax {
+       puts "\n\n\n\n======== BJAX! "
+       juggernaut_channel = "user_123"
+       bj = Bjax.new :host => :localhost, :juggernaut_channel => juggernaut_channel, :params => params do
+         articles = Article.find(:all, :limit => 1000)
+         articles.each do |article|
+           puts article.title
+         end
+       end
+       #bj.call
+    ; Juggernaut.send_to_channels('alert('hey!');', ['user_123'])) - started
+I, [2008-06-25T17:27:11.245551 #15878]  INFO -- : job[2](./script/runner ActiveSupport::JSON.decode('null');    respond_to do |format|
+     format.bjax {
+       puts "\n\n\n\n======== BJAX! "
+       juggernaut_channel = "user_123"
+       bj = Bjax.new :host => :localhost, :juggernaut_channel => juggernaut_channel, :params => params do
+         articles = Article.find(:all, :limit => 1000)
+         articles.each do |article|
+           puts article.title
+         end
+       end
+       #bj.call
+    ; Juggernaut.send_to_channels('alert('hey!');', ['user_123'])) - exit_status=10752
+I, [2008-06-25T17:29:00.818244 #15878]  INFO -- : STOPPED
+I, [2008-06-25T17:29:43.517820 #15899]  INFO -- : STARTED
+I, [2008-06-25T17:29:44.763917 #15899]  INFO -- : STOPPED
+I, [2008-06-25T17:29:56.947088 #15915]  INFO -- : STARTED
+I, [2008-06-25T17:29:56.964407 #15915]  INFO -- : job[3](./script/runner ActiveSupport::JSON.decode('{"action": "bjax_action", "controller": "bjax"}'); 
+         articles = Article.find(:all, :limit => 1000)
+         articles.each do |article|
+           puts article.title
+         end
+      ; Juggernaut.send_to_channels('alert('hey!');', ['user_123'])) - started
+I, [2008-06-25T17:29:57.020545 #15915]  INFO -- : job[3](./script/runner ActiveSupport::JSON.decode('{"action": "bjax_action", "controller": "bjax"}'); 
+         articles = Article.find(:all, :limit => 1000)
+         articles.each do |article|
+           puts article.title
+         end
+      ; Juggernaut.send_to_channels('alert('hey!');', ['user_123'])) - exit_status=10752
+I, [2008-06-25T17:30:16.038380 #15915]  INFO -- : job[4](./script/runner ActiveSupport::JSON.decode('{"action": "bjax_action", "controller": "bjax"}');    respond_to do |format|
+     format.bjax {
+       puts "\n\n\n\n======== BJAX! "
+       juggernaut_channel = "user_123"
+       bj = Bjax.new :host => :localhost, :juggernaut_channel => juggernaut_channel, :params => params do
+         articles = Article.find(:all, :limit => 1000)
+         articles.each do |article|
+           puts article.title
+         end
+       end
+       #bj.call
+       puts bj.id
+       puts bj.source
+    ; Juggernaut.send_to_channels('alert('hey!');', ['user_123'])) - started
+I, [2008-06-25T17:30:16.088774 #15915]  INFO -- : job[4](./script/runner ActiveSupport::JSON.decode('{"action": "bjax_action", "controller": "bjax"}');    respond_to do |format|
+     format.bjax {
+       puts "\n\n\n\n======== BJAX! "
+       juggernaut_channel = "user_123"
+       bj = Bjax.new :host => :localhost, :juggernaut_channel => juggernaut_channel, :params => params do
+         articles = Article.find(:all, :limit => 1000)
+         articles.each do |article|
+           puts article.title
+         end
+       end
+       #bj.call
+       puts bj.id
+       puts bj.source
+    ; Juggernaut.send_to_channels('alert('hey!');', ['user_123'])) - exit_status=10752
+I, [2008-06-25T17:32:04.790243 #15915]  INFO -- : STOPPED
+I, [2008-06-25T17:34:03.070252 #15949]  INFO -- : STARTED
+I, [2008-06-25T17:34:03.091244 #15949]  INFO -- : job[5](./script/runner Juggernaut.send_to_channels('alert('hey!');', ['user_123'])) - started
+I, [2008-06-25T17:34:03.200605 #15949]  INFO -- : job[5](./script/runner Juggernaut.send_to_channels('alert('hey!');', ['user_123'])) - exit_status=512
+I, [2008-06-25T17:34:24.787263 #15949]  INFO -- : STOPPED
+I, [2008-06-25T17:38:38.433270 #15994]  INFO -- : STARTED
+I, [2008-06-25T17:38:38.453015 #15994]  INFO -- : job[6](./script/runner Juggernaut.send_to_channels('alert(1)', ['user_123'])) - started
+I, [2008-06-25T17:38:38.557385 #15994]  INFO -- : job[6](./script/runner Juggernaut.send_to_channels('alert(1)', ['user_123'])) - exit_status=512
+I, [2008-06-25T17:42:04.635275 #15994]  INFO -- : job[7](./script/runner Juggernaut.send_to_channels('alert(1)', ['user_123'])) - started
+I, [2008-06-25T17:42:04.752385 #15994]  INFO -- : job[7](./script/runner Juggernaut.send_to_channels('alert(1)', ['user_123'])) - exit_status=512
+I, [2008-06-25T17:42:15.764924 #15994]  INFO -- : job[8](./script/runner 'Juggernaut.send_to_channels('alert(1)', ['user_123'])') - started
+I, [2008-06-25T17:42:15.873322 #15994]  INFO -- : job[8](./script/runner 'Juggernaut.send_to_channels('alert(1)', ['user_123'])') - exit_status=512
+I, [2008-06-25T17:47:16.984121 #15994]  INFO -- : job[9](./script/runner "Juggernaut.send_to_channels('alert(1)', ['user_123'])") - started
+I, [2008-06-25T17:47:18.429227 #15994]  INFO -- : job[9](./script/runner "Juggernaut.send_to_channels('alert(1)', ['user_123'])") - exit_status=0
+I, [2008-06-25T17:49:12.836876 #16109]  INFO -- : STARTED
+I, [2008-06-25T17:49:12.852997 #16109]  INFO -- : job[10](./script/runner "Juggernaut.send_to_channels('alert(1);', ['user_123'])") - started
+I, [2008-06-25T17:49:14.366146 #16109]  INFO -- : job[10](./script/runner "Juggernaut.send_to_channels('alert(1);', ['user_123'])") - exit_status=0
+I, [2008-06-25T17:50:58.828537 #16109]  INFO -- : STOPPED
+I, [2008-06-25T17:51:09.032844 #16128]  INFO -- : STARTED
+I, [2008-06-25T17:51:09.049742 #16128]  INFO -- : job[11](./script/runner "Juggernaut.send_to_channels('alert(1);', ['user_123'])") - started
+I, [2008-06-25T17:51:10.698348 #16128]  INFO -- : job[11](./script/runner "Juggernaut.send_to_channels('alert(1);', ['user_123'])") - exit_status=0
+I, [2008-06-25T18:07:03.087317 #16128]  INFO -- : STOPPED
+I, [2008-06-25T18:24:37.389281 #16411]  INFO -- : STARTED
+I, [2008-06-25T18:24:37.406589 #16411]  INFO -- : job[12](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T18:24:39.023815 #16411]  INFO -- : job[12](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T18:25:50.069584 #16411]  INFO -- : job[13](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T18:25:51.504426 #16411]  INFO -- : job[13](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T18:31:10.661423 #16411]  INFO -- : job[14](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[723738386722386].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T18:31:12.219546 #16411]  INFO -- : job[14](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[723738386722386].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T18:34:28.296745 #16411]  INFO -- : job[15](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[310477789623868].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T18:34:29.734788 #16411]  INFO -- : job[15](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[310477789623868].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T18:34:57.655086 #16411]  INFO -- : STOPPED
+I, [2008-06-25T18:43:31.903290 #16578]  INFO -- : STARTED
+I, [2008-06-25T18:43:31.924070 #16578]  INFO -- : job[16](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[681950243664230].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T18:43:33.477724 #16578]  INFO -- : job[16](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[681950243664230].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T18:43:51.080482 #16578]  INFO -- : STOPPED
+I, [2008-06-25T18:44:59.464427 #16596]  INFO -- : STARTED
+I, [2008-06-25T18:44:59.481435 #16596]  INFO -- : job[17](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[81419119014602].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T18:45:00.915922 #16596]  INFO -- : job[17](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[81419119014602].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T18:46:49.329593 #16614]  INFO -- : STARTED
+I, [2008-06-25T18:46:49.347171 #16614]  INFO -- : job[18](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[65503211146723].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T18:46:50.843227 #16614]  INFO -- : job[18](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[65503211146723].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T18:47:06.969177 #16596]  INFO -- : STOPPED
+I, [2008-06-25T18:47:33.188486 #16614]  INFO -- : STOPPED
+I, [2008-06-25T18:52:58.034728 #16672]  INFO -- : STARTED
+I, [2008-06-25T18:52:58.051638 #16672]  INFO -- : job[19](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[4624473969847945].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T18:52:59.482009 #16672]  INFO -- : job[19](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[4624473969847945].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T18:53:25.548143 #16672]  INFO -- : STOPPED
+I, [2008-06-25T23:17:59.609821 #16972]  INFO -- : STARTED
+I, [2008-06-25T23:17:59.627641 #16972]  INFO -- : job[20](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[1309907892315258].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T23:18:01.569182 #16972]  INFO -- : job[20](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[1309907892315258].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T23:19:59.136072 #16972]  INFO -- : STOPPED
+I, [2008-06-25T23:20:33.106224 #17013]  INFO -- : STARTED
+I, [2008-06-25T23:20:33.129790 #17013]  INFO -- : job[21](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[161461905331695].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T23:20:36.182696 #17013]  INFO -- : job[21](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[161461905331695].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T23:27:00.847963 #15994]  INFO -- : SIGTERM
+I, [2008-06-25T23:27:00.848347 #15994]  INFO -- : STOPPED
+I, [2008-06-25T23:38:05.726084 #17013]  INFO -- : STOPPED
+I, [2008-06-25T23:38:19.334657 #17208]  INFO -- : STARTED
+I, [2008-06-25T23:38:19.350629 #17208]  INFO -- : job[22](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[580395598673036].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T23:38:20.972828 #17208]  INFO -- : job[22](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[580395598673036].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T23:42:49.469169 #17208]  INFO -- : STOPPED
+I, [2008-06-25T23:43:52.421652 #17259]  INFO -- : STARTED
+I, [2008-06-25T23:43:52.439413 #17259]  INFO -- : job[23](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[306429150474929].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T23:43:53.994799 #17259]  INFO -- : job[23](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[306429150474929].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T23:44:15.155651 #17259]  INFO -- : STOPPED
+I, [2008-06-25T23:44:22.604328 #17269]  INFO -- : STARTED
+I, [2008-06-25T23:44:22.630636 #17269]  INFO -- : job[24](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[54525116070796].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T23:44:24.152627 #17269]  INFO -- : job[24](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[54525116070796].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T23:45:37.383264 #17269]  INFO -- : STOPPED
+I, [2008-06-25T23:46:02.390611 #17288]  INFO -- : STARTED
+I, [2008-06-25T23:46:02.411337 #17288]  INFO -- : job[25](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[3037642327045082].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T23:46:03.939489 #17288]  INFO -- : job[25](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[3037642327045082].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T23:47:14.361258 #17288]  INFO -- : STOPPED
+I, [2008-06-25T23:47:20.659891 #17303]  INFO -- : STARTED
+I, [2008-06-25T23:47:20.674828 #17303]  INFO -- : job[26](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[775503886406773].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T23:47:22.100292 #17303]  INFO -- : job[26](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[775503886406773].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T23:49:17.300457 #17303]  INFO -- : STOPPED
+I, [2008-06-25T23:49:23.760012 #17322]  INFO -- : STARTED
+I, [2008-06-25T23:49:23.782786 #17322]  INFO -- : job[27](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[899609304758398].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T23:49:25.234008 #17322]  INFO -- : job[27](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[899609304758398].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T23:51:31.339511 #17322]  INFO -- : STOPPED
+I, [2008-06-25T23:51:36.818675 #17350]  INFO -- : STARTED
+I, [2008-06-25T23:51:36.837278 #17350]  INFO -- : job[28](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[688693078758607].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T23:51:38.271861 #17350]  INFO -- : job[28](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[688693078758607].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T23:53:20.322396 #17350]  INFO -- : job[29](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[748926503828524].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T23:53:21.887406 #17350]  INFO -- : job[29](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[748926503828524].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T23:53:32.336406 #17350]  INFO -- : STOPPED
+I, [2008-06-25T23:53:38.915476 #17371]  INFO -- : STARTED
+I, [2008-06-25T23:53:38.940018 #17371]  INFO -- : job[30](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[3834827256377434].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T23:53:40.440398 #17371]  INFO -- : job[30](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[3834827256377434].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-25T23:54:23.575885 #17371]  INFO -- : STOPPED
+I, [2008-06-25T23:54:28.377543 #17383]  INFO -- : STARTED
+I, [2008-06-25T23:54:28.398763 #17383]  INFO -- : job[31](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[3316270569033188].onSuccess();', ['user_123'])") - started
+I, [2008-06-25T23:54:29.834762 #17383]  INFO -- : job[31](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[3316270569033188].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T00:01:37.623121 #17383]  INFO -- : STOPPED
+I, [2008-06-26T00:01:42.995853 #17456]  INFO -- : STARTED
+I, [2008-06-26T00:01:43.017546 #17456]  INFO -- : job[32](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[605520794797863].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T00:01:44.443459 #17456]  INFO -- : job[32](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[605520794797863].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T14:37:52.938637 #17456]  INFO -- : job[33](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[2266840179466800].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T14:37:54.851183 #17456]  INFO -- : job[33](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[2266840179466800].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T14:42:38.960243 #17456]  INFO -- : job[34](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[0875863070711794].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T14:42:40.531083 #17456]  INFO -- : job[34](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[0875863070711794].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T14:43:04.550557 #17456]  INFO -- : job[35](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[767669402095129].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T14:43:06.103500 #17456]  INFO -- : job[35](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[767669402095129].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T14:43:27.120656 #17456]  INFO -- : job[36](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[716471383980270].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T14:43:28.548556 #17456]  INFO -- : job[36](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[716471383980270].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T14:52:15.747936 #17456]  INFO -- : job[37](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[520396849068455].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T14:52:17.633689 #17456]  INFO -- : job[37](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[520396849068455].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T15:29:52.508226 #17456]  INFO -- : job[38](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[1036343924917787].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T15:29:54.170453 #17456]  INFO -- : job[38](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[1036343924917787].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T15:33:11.931023 #17456]  INFO -- : STOPPED
+I, [2008-06-26T15:33:19.058182 #20476]  INFO -- : STARTED
+I, [2008-06-26T15:33:19.080730 #20476]  INFO -- : job[39](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[758038372277945].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T15:33:20.527086 #20476]  INFO -- : job[39](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[758038372277945].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T15:39:19.466871 #20476]  INFO -- : STOPPED
+I, [2008-06-26T15:39:34.905769 #20539]  INFO -- : STARTED
+I, [2008-06-26T15:39:34.919276 #20539]  INFO -- : job[40](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[0653375491489589].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T15:39:36.349997 #20539]  INFO -- : job[40](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[0653375491489589].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T15:39:44.363669 #20539]  INFO -- : job[41](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[8542527832107].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T15:39:45.798360 #20539]  INFO -- : job[41](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[8542527832107].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T15:43:09.182393 #20539]  INFO -- : STOPPED
+I, [2008-06-26T15:43:14.945789 #20582]  INFO -- : STARTED
+I, [2008-06-26T15:43:14.964158 #20582]  INFO -- : job[42](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[4397168247667565].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T15:43:16.395635 #20582]  INFO -- : job[42](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[4397168247667565].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T15:44:45.840970 #20582]  INFO -- : STOPPED
+I, [2008-06-26T15:44:52.675730 #20600]  INFO -- : STARTED
+I, [2008-06-26T15:44:52.695712 #20600]  INFO -- : job[43](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[894869332381689].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T15:44:54.123049 #20600]  INFO -- : job[43](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[894869332381689].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T15:46:12.097174 #20600]  INFO -- : STOPPED
+I, [2008-06-26T15:46:48.463257 #20620]  INFO -- : STARTED
+I, [2008-06-26T15:46:48.489096 #20620]  INFO -- : job[44](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[59357885093055].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T15:46:49.944412 #20620]  INFO -- : job[44](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[59357885093055].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T15:47:29.738606 #20620]  INFO -- : STOPPED
+I, [2008-06-26T15:47:38.846525 #20644]  INFO -- : STARTED
+I, [2008-06-26T15:47:38.863990 #20644]  INFO -- : job[45](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[99549556178586].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T15:47:40.287698 #20644]  INFO -- : job[45](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[99549556178586].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T15:54:07.563006 #20644]  INFO -- : STOPPED
+I, [2008-06-26T15:54:45.232400 #20726]  INFO -- : STARTED
+I, [2008-06-26T15:54:45.252406 #20726]  INFO -- : job[46](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[65443357778759].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T15:54:46.697231 #20726]  INFO -- : job[46](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[65443357778759].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T15:59:03.345101 #20726]  INFO -- : STOPPED
+I, [2008-06-26T15:59:16.518036 #20774]  INFO -- : STARTED
+I, [2008-06-26T15:59:16.541255 #20774]  INFO -- : job[47](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[85415722473834].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T15:59:17.981440 #20774]  INFO -- : job[47](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[85415722473834].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T16:06:13.968869 #20774]  INFO -- : STOPPED
+I, [2008-06-26T16:06:22.864260 #20850]  INFO -- : STARTED
+I, [2008-06-26T16:06:22.882521 #20850]  INFO -- : job[48](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[119899816968963].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T16:06:24.309902 #20850]  INFO -- : job[48](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[119899816968963].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T16:07:19.738722 #20850]  INFO -- : STOPPED
+I, [2008-06-26T16:07:26.738431 #20864]  INFO -- : STARTED
+I, [2008-06-26T16:07:26.755609 #20864]  INFO -- : job[49](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[97777339698320].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T16:07:28.185406 #20864]  INFO -- : job[49](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[97777339698320].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T16:09:13.181570 #20864]  INFO -- : STOPPED
+I, [2008-06-26T16:10:34.229391 #20894]  INFO -- : STARTED
+I, [2008-06-26T16:10:34.246384 #20894]  INFO -- : job[50](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[78922971493342].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T16:10:35.612487 #20894]  INFO -- : job[50](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[78922971493342].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T16:11:42.659194 #20894]  INFO -- : job[51](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[972735244048872].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T16:11:44.215886 #20894]  INFO -- : job[51](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[972735244048872].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T16:31:19.949966 #20894]  INFO -- : STOPPED
+I, [2008-06-26T16:31:33.681876 #21095]  INFO -- : STARTED
+I, [2008-06-26T16:31:33.703720 #21095]  INFO -- : job[52](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[68361928493357].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T16:31:35.543866 #21095]  INFO -- : job[52](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[68361928493357].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T16:31:59.566007 #21095]  INFO -- : job[53](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[33597443862157].onSuccess();', ['user_123'])") - started
+I, [2008-06-26T16:32:01.115212 #21095]  INFO -- : job[53](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[33597443862157].onSuccess();', ['user_123'])") - exit_status=0
+I, [2008-06-26T16:35:50.374152 #21095]  INFO -- : STOPPED
+I, [2008-06-26T16:35:56.475952 #21146]  INFO -- : STARTED
+I, [2008-06-26T16:35:56.494109 #21146]  INFO -- : job[54](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '49509467076262'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - started
+I, [2008-06-26T16:35:56.538625 #21146]  INFO -- : job[54](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '49509467076262'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - exit_status=10752
+I, [2008-06-26T16:36:56.653158 #21146]  INFO -- : STOPPED
+I, [2008-06-26T16:38:35.790939 #21172]  INFO -- : STARTED
+I, [2008-06-26T16:38:35.808805 #21172]  INFO -- : job[55](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '61878224806438'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - started
+I, [2008-06-26T16:38:35.853699 #21172]  INFO -- : job[55](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '61878224806438'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - exit_status=10752
+I, [2008-06-26T16:41:39.937785 #21172]  INFO -- : job[56](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '99548754904559'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - started
+I, [2008-06-26T16:41:39.981092 #21172]  INFO -- : job[56](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '99548754904559'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - exit_status=10752
+I, [2008-06-26T16:42:17.998715 #21172]  INFO -- : job[57](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '71837232175719'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - started
+I, [2008-06-26T16:42:18.049230 #21172]  INFO -- : job[57](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '71837232175719'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - exit_status=10752
+I, [2008-06-26T16:45:05.113263 #21172]  INFO -- : job[58](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '392126246411196'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - started
+I, [2008-06-26T16:45:05.160169 #21172]  INFO -- : job[58](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '392126246411196'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - exit_status=10752
+I, [2008-06-26T16:47:13.841697 #21172]  INFO -- : STOPPED
+I, [2008-06-26T16:47:25.770183 #21274]  INFO -- : STARTED
+I, [2008-06-26T16:47:25.783976 #21274]  INFO -- : job[59](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '3824276326627995'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - started
+I, [2008-06-26T16:47:25.827127 #21274]  INFO -- : job[59](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '3824276326627995'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - exit_status=10752
+I, [2008-06-26T16:49:35.556600 #21274]  INFO -- : STOPPED
+I, [2008-06-26T16:49:46.455614 #21294]  INFO -- : STARTED
+I, [2008-06-26T16:49:46.470497 #21294]  INFO -- : job[60](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '996145713414469'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3$$$$aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg$$$$ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi$$$$amF4ID0+IG0qbSp4CiAgICAgICAg$$$$" "user_123") - started
+I, [2008-06-26T16:49:47.904393 #21294]  INFO -- : job[60](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '996145713414469'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3$$$$aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg$$$$ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi$$$$amF4ID0+IG0qbSp4CiAgICAgICAg$$$$" "user_123") - exit_status=256
+I, [2008-06-26T16:50:41.933751 #21294]  INFO -- : job[61](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '169831101653793'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3$$$$aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg$$$$ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi$$$$amF4ID0+IG0qbSp4CiAgICAgICAg$$$$" "user_123") - started
+I, [2008-06-26T16:50:43.493274 #21294]  INFO -- : job[61](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '169831101653793'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3$$$$aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg$$$$ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi$$$$amF4ID0+IG0qbSp4CiAgICAgICAg$$$$" "user_123") - exit_status=256
+I, [2008-06-26T16:54:30.962350 #21294]  INFO -- : STOPPED
+I, [2008-06-26T16:54:43.638413 #21352]  INFO -- : STARTED
+I, [2008-06-26T16:54:43.657368 #21352]  INFO -- : job[62](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '632935163110005'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - started
+I, [2008-06-26T16:54:43.703623 #21352]  INFO -- : job[62](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '632935163110005'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - exit_status=10752
+I, [2008-06-26T17:27:38.464600 #21352]  INFO -- : job[1](./script/runner ActiveSupport::JSON.decode('null'); 
+         articles = Article.find(:all, :limit => 1000)
+         articles.each do |article|
+           puts article.title
+         end
+      ; Juggernaut.send_to_channels('alert('hey!');', ['user_123'])) - archived
+I, [2008-06-26T17:27:38.617266 #21352]  INFO -- : job[2](./script/runner ActiveSupport::JSON.decode('null');    respond_to do |format|
+     format.bjax {
+       puts "\n\n\n\n======== BJAX! "
+       juggernaut_channel = "user_123"
+       bj = Bjax.new :host => :localhost, :juggernaut_channel => juggernaut_channel, :params => params do
+         articles = Article.find(:all, :limit => 1000)
+         articles.each do |article|
+           puts article.title
+         end
+       end
+       #bj.call
+    ; Juggernaut.send_to_channels('alert('hey!');', ['user_123'])) - archived
+I, [2008-06-26T17:30:26.687426 #21352]  INFO -- : job[3](./script/runner ActiveSupport::JSON.decode('{"action": "bjax_action", "controller": "bjax"}'); 
+         articles = Article.find(:all, :limit => 1000)
+         articles.each do |article|
+           puts article.title
+         end
+      ; Juggernaut.send_to_channels('alert('hey!');', ['user_123'])) - archived
+I, [2008-06-26T17:30:26.692664 #21352]  INFO -- : job[4](./script/runner ActiveSupport::JSON.decode('{"action": "bjax_action", "controller": "bjax"}');    respond_to do |format|
+     format.bjax {
+       puts "\n\n\n\n======== BJAX! "
+       juggernaut_channel = "user_123"
+       bj = Bjax.new :host => :localhost, :juggernaut_channel => juggernaut_channel, :params => params do
+         articles = Article.find(:all, :limit => 1000)
+         articles.each do |article|
+           puts article.title
+         end
+       end
+       #bj.call
+       puts bj.id
+       puts bj.source
+    ; Juggernaut.send_to_channels('alert('hey!');', ['user_123'])) - archived
+I, [2008-06-26T17:32:06.935838 #21352]  INFO -- : STOPPED
+I, [2008-06-26T17:32:16.877945 #21692]  INFO -- : STARTED
+I, [2008-06-26T17:32:16.903524 #21692]  INFO -- : job[63](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '444925335182419'}" "
+" "user_123") - started
+I, [2008-06-26T17:32:16.960167 #21692]  INFO -- : job[63](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '444925335182419'}" "
+" "user_123") - exit_status=10752
+I, [2008-06-26T17:33:30.771121 #21692]  INFO -- : STOPPED
+I, [2008-06-26T17:33:38.166207 #21706]  INFO -- : STARTED
+I, [2008-06-26T17:33:38.189762 #21706]  INFO -- : job[64](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '84641912251081'}" "
+" "user_123") - started
+I, [2008-06-26T17:33:38.242183 #21706]  INFO -- : job[64](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '84641912251081'}" "
+" "user_123") - exit_status=10752
+I, [2008-06-26T17:34:20.258401 #21706]  INFO -- : job[5](./script/runner Juggernaut.send_to_channels('alert('hey!');', ['user_123'])) - archived
+I, [2008-06-26T17:36:04.355296 #21706]  INFO -- : STOPPED
+I, [2008-06-26T17:36:45.349772 #21743]  INFO -- : STARTED
+I, [2008-06-26T17:36:45.372224 #21743]  INFO -- : job[65](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '4735337213089'}" "
+          m =3D 12
+          x =3D 1
+          while x <=3D 100
+            puts m*m*x
+            x =3D x+1
+          end
+          render :bjax =3D> m*m*x
+        =
+" "user_123") - started
+I, [2008-06-26T17:36:45.424375 #21743]  INFO -- : job[65](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '4735337213089'}" "
+          m =3D 12
+          x =3D 1
+          while x <=3D 100
+            puts m*m*x
+            x =3D x+1
+          end
+          render :bjax =3D> m*m*x
+        =
+" "user_123") - exit_status=10752
+I, [2008-06-26T17:37:37.886300 #21743]  INFO -- : STOPPED
+I, [2008-06-26T17:37:43.992588 #21755]  INFO -- : STARTED
+I, [2008-06-26T17:37:44.011079 #21755]  INFO -- : job[66](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '9481831471925'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - started
+I, [2008-06-26T17:37:44.063433 #21755]  INFO -- : job[66](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '9481831471925'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - exit_status=10752
+I, [2008-06-26T17:39:08.095273 #21755]  INFO -- : job[6](./script/runner Juggernaut.send_to_channels('alert(1)', ['user_123'])) - archived
+I, [2008-06-26T17:39:19.647178 #21755]  INFO -- : STOPPED
+I, [2008-06-26T17:39:28.314543 #21771]  INFO -- : STARTED
+I, [2008-06-26T17:39:28.334989 #21771]  INFO -- : job[67](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '916773282752968'}" "M"B`@("`@("`@("!M(#T@,3(*("`@("`@("`@('@@/2`Q"B`@("`@("`@("!W
+M:&EL92!X(#P](#$P,`H@("`@("`@("`@("!P=71S(&TJ;2IX"B`@("`@("`@
+M("`@('@@/2!X*S$*("`@("`@("`@(&5N9`H@("`@("`@("`@<F5N9&5R(#IB
+5:F%X(#T^(&TJ;2IX"B`@("`@("`@
+" "user_123") - started
+I, [2008-06-26T17:39:28.381028 #21771]  INFO -- : job[67](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '916773282752968'}" "M"B`@("`@("`@("!M(#T@,3(*("`@("`@("`@('@@/2`Q"B`@("`@("`@("!W
+M:&EL92!X(#P](#$P,`H@("`@("`@("`@("!P=71S(&TJ;2IX"B`@("`@("`@
+M("`@('@@/2!X*S$*("`@("`@("`@(&5N9`H@("`@("`@("`@<F5N9&5R(#IB
+5:F%X(#T^(&TJ;2IX"B`@("`@("`@
+" "user_123") - exit_status=10752
+I, [2008-06-26T17:42:16.461985 #21771]  INFO -- : job[7](./script/runner Juggernaut.send_to_channels('alert(1)', ['user_123'])) - archived
+I, [2008-06-26T17:42:16.479230 #21771]  INFO -- : job[8](./script/runner 'Juggernaut.send_to_channels('alert(1)', ['user_123'])') - archived
+I, [2008-06-26T17:43:33.404271 #21771]  INFO -- : STOPPED
+I, [2008-06-26T17:45:27.520889 #21825]  INFO -- : STARTED
+I, [2008-06-26T17:45:27.544929 #21825]  INFO -- : job[68](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '97857145666009'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IG0qbSp4CiAgICAgICAg" "user_123") - started
+I, [2008-06-26T17:45:29.042298 #21825]  INFO -- : job[68](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '97857145666009'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IG0qbSp4CiAgICAgICAg" "user_123") - exit_status=0
+I, [2008-06-26T17:47:27.984904 #21825]  INFO -- : STOPPED
+I, [2008-06-26T17:47:45.186277 #21858]  INFO -- : STARTED
+I, [2008-06-26T17:47:45.204393 #21858]  INFO -- : job[9](./script/runner "Juggernaut.send_to_channels('alert(1)', ['user_123'])") - archived
+I, [2008-06-26T17:47:45.214966 #21858]  INFO -- : job[69](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '92458631327964'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IG0qbSp4CiAgICAgICAg" "user_123") - started
+I, [2008-06-26T17:47:46.652922 #21858]  INFO -- : job[69](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '92458631327964'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IG0qbSp4CiAgICAgICAg" "user_123") - exit_status=0
+I, [2008-06-26T17:49:52.083713 #21858]  INFO -- : STOPPED
+I, [2008-06-26T17:50:20.202730 #21880]  INFO -- : STARTED
+I, [2008-06-26T17:50:20.223066 #21880]  INFO -- : job[10](./script/runner "Juggernaut.send_to_channels('alert(1);', ['user_123'])") - archived
+I, [2008-06-26T17:50:20.239292 #21880]  INFO -- : job[70](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '72352767781259'}" "CiAgICAgICAgICBtID0gcGFyYW1zWyJhcnRpY2xlX2lkIl0KICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IG0qbSp4CiAgICAgICAg" "user_123") - started
+I, [2008-06-26T17:50:21.779121 #21880]  INFO -- : job[70](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '72352767781259'}" "CiAgICAgICAgICBtID0gcGFyYW1zWyJhcnRpY2xlX2lkIl0KICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IG0qbSp4CiAgICAgICAg" "user_123") - exit_status=256
+I, [2008-06-26T17:51:12.222936 #21880]  INFO -- : STOPPED
+I, [2008-06-26T17:51:29.056288 #21894]  INFO -- : STARTED
+I, [2008-06-26T17:51:29.082848 #21894]  INFO -- : job[11](./script/runner "Juggernaut.send_to_channels('alert(1);', ['user_123'])") - archived
+I, [2008-06-26T17:51:29.094663 #21894]  INFO -- : job[71](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '2600599952480475'}" "CiAgICAgICAgICBtID0gcGFyYW1zWyJhcnRpY2xlX2lkIl0KICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IG0qbSp4CiAgICAgICAg" "user_123") - started
+I, [2008-06-26T17:51:30.532440 #21894]  INFO -- : job[71](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '2600599952480475'}" "CiAgICAgICAgICBtID0gcGFyYW1zWyJhcnRpY2xlX2lkIl0KICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IG0qbSp4CiAgICAgICAg" "user_123") - exit_status=256
+I, [2008-06-26T17:52:00.555288 #21894]  INFO -- : job[72](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '956227625873783'}" "CiAgICAgICAgICBtID0gcGFyYW1zWyJhcnRpY2xlX2lkIl0KICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IG0qbSp4CiAgICAgICAg" "user_123") - started
+I, [2008-06-26T17:52:02.126965 #21894]  INFO -- : job[72](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '956227625873783'}" "CiAgICAgICAgICBtID0gcGFyYW1zWyJhcnRpY2xlX2lkIl0KICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IG0qbSp4CiAgICAgICAg" "user_123") - exit_status=256
+I, [2008-06-26T17:53:41.375951 #21894]  INFO -- : STOPPED
+I, [2008-06-26T17:53:49.789804 #21929]  INFO -- : STARTED
+I, [2008-06-26T17:53:49.809945 #21929]  INFO -- : job[73](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '584959872238468'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IDEyCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiBtKm0qeAogICAgICAgICAgCiAgICAgICAg" "user_123") - started
+I, [2008-06-26T17:53:51.250774 #21929]  INFO -- : job[73](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '584959872238468'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IDEyCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiBtKm0qeAogICAgICAgICAgCiAgICAgICAg" "user_123") - exit_status=0
+I, [2008-06-26T17:54:29.064729 #21929]  INFO -- : STOPPED
+I, [2008-06-26T17:54:36.756413 #21941]  INFO -- : STARTED
+I, [2008-06-26T17:54:36.781022 #21941]  INFO -- : job[74](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '79422531784719'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IHBhcmFtc1siYXJ0aWNsZV9pZCJdCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiBtKm0qeAogICAgICAgICAgCiAgICAgICAg" "user_123") - started
+I, [2008-06-26T17:54:38.217214 #21941]  INFO -- : job[74](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '79422531784719'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IHBhcmFtc1siYXJ0aWNsZV9pZCJdCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiBtKm0qeAogICAgICAgICAgCiAgICAgICAg" "user_123") - exit_status=256
+I, [2008-06-26T17:56:44.619451 #21941]  INFO -- : STOPPED
+I, [2008-06-26T17:57:13.596854 #21964]  INFO -- : STARTED
+I, [2008-06-26T17:57:13.615146 #21964]  INFO -- : job[75](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '63849113773533'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXQogICAgICAgICAgeCA9IDEKICAgICAgICAgIHdoaWxlIHggPD0gMTAwCiAgICAgICAgICAgIHB1dHMgbSptKngKICAgICAgICAgICAgeCA9IHgrMQogICAgICAgICAgZW5kCiAgICAgICAgICByZW5kZXIgOmJqYXggPT4gbSptKngKICAgICAgICAgIAogICAgICAgIA==" "user_123") - started
+I, [2008-06-26T17:57:15.052526 #21964]  INFO -- : job[75](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '63849113773533'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXQogICAgICAgICAgeCA9IDEKICAgICAgICAgIHdoaWxlIHggPD0gMTAwCiAgICAgICAgICAgIHB1dHMgbSptKngKICAgICAgICAgICAgeCA9IHgrMQogICAgICAgICAgZW5kCiAgICAgICAgICByZW5kZXIgOmJqYXggPT4gbSptKngKICAgICAgICAgIAogICAgICAgIA==" "user_123") - exit_status=256
+I, [2008-06-26T17:58:35.085223 #21964]  INFO -- : job[76](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '91282264126625'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXQogICAgICAgICAgeCA9IDEKICAgICAgICAgIHdoaWxlIHggPD0gMTAwCiAgICAgICAgICAgIHB1dHMgbSptKngKICAgICAgICAgICAgeCA9IHgrMQogICAgICAgICAgZW5kCiAgICAgICAgICByZW5kZXIgOmJqYXggPT4gbSptKngKICAgICAgICAgIAogICAgICAgIA==" "user_123") - started
+I, [2008-06-26T17:58:36.725036 #21964]  INFO -- : job[76](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '91282264126625'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXQogICAgICAgICAgeCA9IDEKICAgICAgICAgIHdoaWxlIHggPD0gMTAwCiAgICAgICAgICAgIHB1dHMgbSptKngKICAgICAgICAgICAgeCA9IHgrMQogICAgICAgICAgZW5kCiAgICAgICAgICByZW5kZXIgOmJqYXggPT4gbSptKngKICAgICAgICAgIAogICAgICAgIA==" "user_123") - exit_status=256
+I, [2008-06-26T17:59:03.982695 #21964]  INFO -- : STOPPED
+I, [2008-06-26T17:59:12.939507 #21997]  INFO -- : STARTED
+I, [2008-06-26T17:59:12.963745 #21997]  INFO -- : job[77](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '65771596795113'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiBtKm0qeAogICAgICAgICAgCiAgICAgICAg" "user_123") - started
+I, [2008-06-26T17:59:14.400632 #21997]  INFO -- : job[77](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '65771596795113'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiBtKm0qeAogICAgICAgICAgCiAgICAgICAg" "user_123") - exit_status=0
+I, [2008-06-26T18:00:32.271040 #21997]  INFO -- : STOPPED
+I, [2008-06-26T18:00:38.211709 #22013]  INFO -- : STARTED
+I, [2008-06-26T18:00:38.229853 #22013]  INFO -- : job[78](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '54321864462916'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiA=" "user_123") - started
+I, [2008-06-26T18:00:39.662246 #22013]  INFO -- : job[78](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '54321864462916'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiA=" "user_123") - exit_status=256
+I, [2008-06-26T18:02:10.610172 #22013]  INFO -- : STOPPED
+I, [2008-06-26T18:02:28.244184 #22031]  INFO -- : STARTED
+I, [2008-06-26T18:02:28.262125 #22031]  INFO -- : job[79](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '579519293672379'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiA=" "user_123") - started
+I, [2008-06-26T18:02:29.897039 #22031]  INFO -- : job[79](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '579519293672379'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiA=" "user_123") - exit_status=256
+I, [2008-06-26T18:03:09.835043 #22031]  INFO -- : STOPPED
+I, [2008-06-26T18:03:18.203727 #22043]  INFO -- : STARTED
+I, [2008-06-26T18:03:18.218451 #22043]  INFO -- : job[80](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '151692163458370'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiB9" "user_123") - started
+I, [2008-06-26T18:03:19.710505 #22043]  INFO -- : job[80](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '151692163458370'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiB9" "user_123") - exit_status=0
+I, [2008-06-26T18:04:17.748693 #22043]  INFO -- : job[81](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '93349942581943'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiB9" "user_123") - started
+I, [2008-06-26T18:04:19.197290 #22043]  INFO -- : job[81](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '93349942581943'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiB9" "user_123") - exit_status=0
+I, [2008-06-26T18:05:46.398329 #22043]  INFO -- : STOPPED
+I, [2008-06-26T18:05:56.739901 #22079]  INFO -- : STARTED
+I, [2008-06-26T18:05:56.759463 #22079]  INFO -- : job[82](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '94442526468602'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiB9" "user_123") - started
+I, [2008-06-26T18:05:58.332811 #22079]  INFO -- : job[82](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '94442526468602'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiB9" "user_123") - exit_status=0
+I, [2008-06-26T18:06:45.816873 #22079]  INFO -- : STOPPED
+I, [2008-06-26T18:06:57.140607 #22092]  INFO -- : STARTED
+I, [2008-06-26T18:06:57.163476 #22092]  INFO -- : job[83](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '252952694972982'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiB9" "user_123") - started
+I, [2008-06-26T18:06:58.658435 #22092]  INFO -- : job[83](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '252952694972982'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiB9" "user_123") - exit_status=0
+I, [2008-06-26T18:07:26.975912 #22092]  INFO -- : STOPPED
+I, [2008-06-26T18:07:37.586162 #22103]  INFO -- : STARTED
+I, [2008-06-26T18:07:37.603862 #22103]  INFO -- : job[84](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '88180190410034'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IHBhcmFtc1siYXJ0aWNsZV9pZCJdLnRvX2kKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IHsgOm51bWJlciA9PiBtKm0qeCwgOm1lc3NhZ2UgPT4gImhleSBoZXkiIH0=" "user_123") - started
+I, [2008-06-26T18:07:39.048830 #22103]  INFO -- : job[84](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '88180190410034'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IHBhcmFtc1siYXJ0aWNsZV9pZCJdLnRvX2kKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IHsgOm51bWJlciA9PiBtKm0qeCwgOm1lc3NhZ2UgPT4gImhleSBoZXkiIH0=" "user_123") - exit_status=0
+I, [2008-06-26T18:14:03.216073 #22103]  INFO -- : job[85](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '55422554215214'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IHBhcmFtc1siYXJ0aWNsZV9pZCJdLnRvX2kKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IHsgOm51bWJlciA9PiBtKm0qeCwgOm1lc3NhZ2UgPT4gImhleSBoZXkiIH0=" "user_123") - started
+I, [2008-06-26T18:14:04.856754 #22103]  INFO -- : job[85](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '55422554215214'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IHBhcmFtc1siYXJ0aWNsZV9pZCJdLnRvX2kKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IHsgOm51bWJlciA9PiBtKm0qeCwgOm1lc3NhZ2UgPT4gImhleSBoZXkiIH0=" "user_123") - exit_status=0
+I, [2008-06-26T18:25:17.113992 #22103]  INFO -- : job[12](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[].onSuccess();', ['user_123'])") - archived
+I, [2008-06-26T18:25:59.144486 #22103]  INFO -- : job[13](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[].onSuccess();', ['user_123'])") - archived
+I, [2008-06-26T18:31:35.273335 #22103]  INFO -- : job[14](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[723738386722386].onSuccess();', ['user_123'])") - archived
+I, [2008-06-26T18:35:05.359673 #22103]  INFO -- : job[15](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[310477789623868].onSuccess();', ['user_123'])") - archived
+I, [2008-06-26T18:44:11.571270 #22103]  INFO -- : job[16](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[681950243664230].onSuccess();', ['user_123'])") - archived
+I, [2008-06-26T18:45:35.611927 #22103]  INFO -- : job[17](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[81419119014602].onSuccess();', ['user_123'])") - archived
+I, [2008-06-26T18:46:59.775290 #22103]  INFO -- : job[18](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[65503211146723].onSuccess();', ['user_123'])") - archived
+I, [2008-06-26T18:53:18.046245 #22103]  INFO -- : job[19](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[4624473969847945].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T10:53:34.641439 #22103]  INFO -- : job[20](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[1309907892315258].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T10:53:34.662795 #22103]  INFO -- : job[21](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[161461905331695].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T10:53:34.666374 #22103]  INFO -- : job[22](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[580395598673036].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T10:53:34.668810 #22103]  INFO -- : job[23](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[306429150474929].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T10:53:34.670991 #22103]  INFO -- : job[24](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[54525116070796].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T10:53:34.673247 #22103]  INFO -- : job[25](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[3037642327045082].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T10:53:34.675482 #22103]  INFO -- : job[26](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[775503886406773].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T10:53:34.678214 #22103]  INFO -- : job[27](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[899609304758398].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T10:53:34.680536 #22103]  INFO -- : job[28](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[688693078758607].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T10:53:34.682678 #22103]  INFO -- : job[29](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[748926503828524].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T10:53:34.685061 #22103]  INFO -- : job[30](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[3834827256377434].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T10:53:34.687233 #22103]  INFO -- : job[31](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[3316270569033188].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T10:53:34.689360 #22103]  INFO -- : job[32](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[605520794797863].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:42.690275 #22103]  INFO -- : job[33](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[2266840179466800].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.070661 #22103]  INFO -- : job[34](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[0875863070711794].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.074230 #22103]  INFO -- : job[35](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[767669402095129].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.077685 #22103]  INFO -- : job[36](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[716471383980270].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.080598 #22103]  INFO -- : job[37](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[520396849068455].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.083053 #22103]  INFO -- : job[38](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[1036343924917787].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.085224 #22103]  INFO -- : job[39](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[758038372277945].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.087465 #22103]  INFO -- : job[40](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[0653375491489589].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.089584 #22103]  INFO -- : job[41](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[8542527832107].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.091764 #22103]  INFO -- : job[42](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[4397168247667565].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.093951 #22103]  INFO -- : job[43](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[894869332381689].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.096104 #22103]  INFO -- : job[44](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[59357885093055].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.166969 #22103]  INFO -- : job[45](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[99549556178586].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.183706 #22103]  INFO -- : job[46](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[65443357778759].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.187401 #22103]  INFO -- : job[47](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[85415722473834].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.192620 #22103]  INFO -- : job[48](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[119899816968963].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.199274 #22103]  INFO -- : job[49](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[97777339698320].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.202226 #22103]  INFO -- : job[50](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[78922971493342].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.205378 #22103]  INFO -- : job[51](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[972735244048872].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.231739 #22103]  INFO -- : job[52](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[68361928493357].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.239568 #22103]  INFO -- : job[53](./script/runner "Juggernaut.send_to_channels('Bjax.__job_responder[33597443862157].onSuccess();', ['user_123'])") - archived
+I, [2008-06-27T17:47:43.242051 #22103]  INFO -- : job[54](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '49509467076262'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - archived
+I, [2008-06-27T17:47:43.245233 #22103]  INFO -- : job[55](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '61878224806438'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - archived
+I, [2008-06-27T17:47:43.248282 #22103]  INFO -- : job[56](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '99548754904559'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - archived
+I, [2008-06-27T17:47:43.251475 #22103]  INFO -- : job[57](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '71837232175719'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - archived
+I, [2008-06-27T17:47:43.254582 #22103]  INFO -- : job[58](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '392126246411196'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - archived
+I, [2008-06-27T17:47:43.257717 #22103]  INFO -- : job[59](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '3824276326627995'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - archived
+I, [2008-06-27T17:47:43.260759 #22103]  INFO -- : job[60](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '996145713414469'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3$$$$aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg$$$$ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi$$$$amF4ID0+IG0qbSp4CiAgICAgICAg$$$$" "user_123") - archived
+I, [2008-06-27T17:47:43.264742 #22103]  INFO -- : job[61](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '169831101653793'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3$$$$aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg$$$$ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi$$$$amF4ID0+IG0qbSp4CiAgICAgICAg$$$$" "user_123") - archived
+I, [2008-06-27T17:47:43.268378 #22103]  INFO -- : job[62](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '632935163110005'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - archived
+I, [2008-06-27T17:47:43.270924 #22103]  INFO -- : job[63](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '444925335182419'}" "
+" "user_123") - archived
+I, [2008-06-27T17:47:43.273341 #22103]  INFO -- : job[64](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '84641912251081'}" "
+" "user_123") - archived
+I, [2008-06-27T17:47:43.275766 #22103]  INFO -- : job[65](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '4735337213089'}" "
+          m =3D 12
+          x =3D 1
+          while x <=3D 100
+            puts m*m*x
+            x =3D x+1
+          end
+          render :bjax =3D> m*m*x
+        =
+" "user_123") - archived
+I, [2008-06-27T17:47:43.314820 #22103]  INFO -- : job[66](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '9481831471925'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3
+aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAg
+ICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpi
+amF4ID0+IG0qbSp4CiAgICAgICAg
+" "user_123") - archived
+I, [2008-06-27T17:47:43.317883 #22103]  INFO -- : job[67](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '916773282752968'}" "M"B`@("`@("`@("!M(#T@,3(*("`@("`@("`@('@@/2`Q"B`@("`@("`@("!W
+M:&EL92!X(#P](#$P,`H@("`@("`@("`@("!P=71S(&TJ;2IX"B`@("`@("`@
+M("`@('@@/2!X*S$*("`@("`@("`@(&5N9`H@("`@("`@("`@<F5N9&5R(#IB
+5:F%X(#T^(&TJ;2IX"B`@("`@("`@
+" "user_123") - archived
+I, [2008-06-27T17:47:43.323235 #22103]  INFO -- : job[68](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '97857145666009'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IG0qbSp4CiAgICAgICAg" "user_123") - archived
+I, [2008-06-27T17:48:25.368407 #22103]  INFO -- : job[69](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '92458631327964'}" "CiAgICAgICAgICBtID0gMTIKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IG0qbSp4CiAgICAgICAg" "user_123") - archived
+I, [2008-06-27T17:50:31.493783 #22103]  INFO -- : job[70](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '72352767781259'}" "CiAgICAgICAgICBtID0gcGFyYW1zWyJhcnRpY2xlX2lkIl0KICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IG0qbSp4CiAgICAgICAg" "user_123") - archived
+I, [2008-06-27T17:51:55.538131 #22103]  INFO -- : job[71](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '2600599952480475'}" "CiAgICAgICAgICBtID0gcGFyYW1zWyJhcnRpY2xlX2lkIl0KICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IG0qbSp4CiAgICAgICAg" "user_123") - archived
+I, [2008-06-27T17:52:37.560294 #22103]  INFO -- : job[72](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '956227625873783'}" "CiAgICAgICAgICBtID0gcGFyYW1zWyJhcnRpY2xlX2lkIl0KICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IG0qbSp4CiAgICAgICAg" "user_123") - archived
+I, [2008-06-27T17:54:01.604636 #22103]  INFO -- : job[73](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '584959872238468'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IDEyCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiBtKm0qeAogICAgICAgICAgCiAgICAgICAg" "user_123") - archived
+I, [2008-06-27T17:54:43.633429 #22103]  INFO -- : job[74](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '79422531784719'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IHBhcmFtc1siYXJ0aWNsZV9pZCJdCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiBtKm0qeAogICAgICAgICAgCiAgICAgICAg" "user_123") - archived
+I, [2008-06-27T17:57:31.739613 #22103]  INFO -- : job[75](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '63849113773533'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXQogICAgICAgICAgeCA9IDEKICAgICAgICAgIHdoaWxlIHggPD0gMTAwCiAgICAgICAgICAgIHB1dHMgbSptKngKICAgICAgICAgICAgeCA9IHgrMQogICAgICAgICAgZW5kCiAgICAgICAgICByZW5kZXIgOmJqYXggPT4gbSptKngKICAgICAgICAgIAogICAgICAgIA==" "user_123") - archived
+I, [2008-06-27T17:58:55.794774 #22103]  INFO -- : job[76](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '91282264126625'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXQogICAgICAgICAgeCA9IDEKICAgICAgICAgIHdoaWxlIHggPD0gMTAwCiAgICAgICAgICAgIHB1dHMgbSptKngKICAgICAgICAgICAgeCA9IHgrMQogICAgICAgICAgZW5kCiAgICAgICAgICByZW5kZXIgOmJqYXggPT4gbSptKngKICAgICAgICAgIAogICAgICAgIA==" "user_123") - archived
+I, [2008-06-27T17:59:38.657388 #22103]  INFO -- : job[77](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '65771596795113'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiBtKm0qeAogICAgICAgICAgCiAgICAgICAg" "user_123") - archived
+I, [2008-06-27T18:01:02.705655 #22103]  INFO -- : job[78](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '54321864462916'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiA=" "user_123") - archived
+I, [2008-06-27T18:03:08.762346 #22103]  INFO -- : job[79](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '579519293672379'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiA=" "user_123") - archived
+I, [2008-06-27T18:03:50.785913 #22103]  INFO -- : job[80](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '151692163458370'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiB9" "user_123") - archived
+I, [2008-06-27T18:04:32.807217 #22103]  INFO -- : job[81](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '123', 'key': '93349942581943'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiB9" "user_123") - archived
+I, [2008-06-27T18:05:56.849101 #22103]  INFO -- : job[82](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '94442526468602'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiB9" "user_123") - archived
+I, [2008-06-27T18:07:20.888459 #22103]  INFO -- : job[83](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '252952694972982'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IEBwYXJhbXNbImFydGljbGVfaWQiXS50b19pCiAgICAgICAgICB4ID0gMQogICAgICAgICAgd2hpbGUgeCA8PSAxMDAKICAgICAgICAgICAgcHV0cyBtKm0qeAogICAgICAgICAgICB4ID0geCsxCiAgICAgICAgICBlbmQKICAgICAgICAgIHJlbmRlciA6YmpheCA9PiB7IDpudW1iZXIgPT4gbSptKngsIDptZXNzYWdlID0+ICJoZXkgaGV5IiB9" "user_123") - archived
+I, [2008-06-27T18:08:02.918304 #22103]  INFO -- : job[84](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '88180190410034'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IHBhcmFtc1siYXJ0aWNsZV9pZCJdLnRvX2kKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IHsgOm51bWJlciA9PiBtKm0qeCwgOm1lc3NhZ2UgPT4gImhleSBoZXkiIH0=" "user_123") - archived
+I, [2008-06-27T18:14:21.102315 #22103]  INFO -- : job[85](./script/runner /Users/williamcotton/Projects/bjax/vendor/plugins/bjax/lib/bjax_runner.rb "{'action': 'bjax_action', 'controller': 'bjax', 'article_id': '3', 'key': '55422554215214'}" "CiAgICAgICAgICAjIEJKQVggQ29kZQogICAgICAgICAgbSA9IHBhcmFtc1siYXJ0aWNsZV9pZCJdLnRvX2kKICAgICAgICAgIHggPSAxCiAgICAgICAgICB3aGlsZSB4IDw9IDEwMAogICAgICAgICAgICBwdXRzIG0qbSp4CiAgICAgICAgICAgIHggPSB4KzEKICAgICAgICAgIGVuZAogICAgICAgICAgcmVuZGVyIDpiamF4ID0+IHsgOm51bWJlciA9PiBtKm0qeCwgOm1lc3NhZ2UgPT4gImhleSBoZXkiIH0=" "user_123") - archived
