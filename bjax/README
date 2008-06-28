@@ -1,13 +1,17 @@
 Bjax
 ====
 
-Introduction goes here.
+To install:
+
+script/plugin install http://bjax.rubyforge.org/svn/trunk/bjax/
 
 
 Example
 =======
 
-Example goes here.
+Check out the demo app:
+
+svn checkout http://bjax.rubyforge.org/svn/trunk/demo_app/ bjax_demo_app
 
 
-Copyright (c) 2008 [name of plugin creator], released under the MIT license
+Copyright (c) 2008 William Cotton, released under the MIT license
