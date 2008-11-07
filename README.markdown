@@ -64,7 +64,9 @@ Currently, Bjax is based on the [Prototype](http://www.prototypejs.org/) Javascr
 		
 		getItemResults = function(results) {
 			if (results.status) {
-				alert(results.message);
+				items.each(function(item) {
+					alert(item);
+				});
 			}
 		}
 		
@@ -82,12 +84,13 @@ Currently, Bjax is based on the [Prototype](http://www.prototypejs.org/) Javascr
 		
 	      juggernaut_channel = "bjax_" + @current_user.id.to_s
 	      bj = Bjax.new(:juggernaut_channel => juggernaut_channel, :params => params) do
-	  	  render :bjax_status_update => "Getting Page"
-	
+	  	    
+	        render :bjax_status_update => "Getting Page"
 	        page = Page.find(params["page_id"])
+	        
 	        render :bjax_status_update => "Computing Items"
-	
 	        page.compute_items
+	
 	        render :bjax_status_update => "Updating Client"
 	
 	        if page.items_computed?
@@ -103,8 +106,14 @@ Currently, Bjax is based on the [Prototype](http://www.prototypejs.org/) Javascr
 	    }
 	  end
 	end
+	
+### Seriously!?
 
-### Usage Notes
+Yes! That's it. As long as you have Juggernaut, Starling, Workling, and BackgroundJob properly configured and running, Bjax handles the rest.
+
+That code block is passed off to the Worklings regardless of where they are... in most deployment situations the code will likely be run on a completely different slice. It does this by using a serialized Proc.
+
+### Usage Notes!
 
 Bjax currently has issues with using "render :bjax" more than once in a code block. I recommend that the last line of the code block contains the "render :bjax" method call.
 
@@ -112,13 +121,21 @@ You cannot create the code block as a proc or lambda and use that to call Bjax.n
 
 In order for Bjax to fall back on polling, you MUST return the id of the Bjax instance, ie, render :json => bj.id
 
+## Serialized Procs? WTF are you thinking?!
+
+I **REALLY** like the idea of serialized Procs. While RPC, SOAP, and other service oriented architectures are nice, they don't allow trusted resources to integrate is such a seamless way. Also, possibilities are limited to the APIs that each site offer up. With serialized Procs, code written in one environment could be executed in another environment, be it another process, or another server, with no limitations on what could be done, other than the scope it is run in.
+
 ## Future Development Ideas
+
+Perhaps some documentation? :)
 
 The library needs to be better organized with proper namespacing and separation of code.
 
-Better integration and support for other background job processors, message queues, and Comet-style persistent client connections.
+Better integration and support for other background job processors, message queues, and Comet-style persistent client connections. (I'm looking at you, XMPP-BOSH and XMPP-SEP)
 
 Support for additional Javascript libraries.
+
+Make the serialized Proc code way more robust.
 
 ---
 
