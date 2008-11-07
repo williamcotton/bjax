@@ -1,3 +1,0 @@
-get at a models validations
-
-Article.read_inheritable_attribute(:validate)[9]
