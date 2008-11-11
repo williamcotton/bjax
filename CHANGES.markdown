@@ -1,3 +1,7 @@
+### November 11, 2008
+
+- Moved Bjax parameters from JSON encoding to Marshal.dump due to some translation issues.
+
 ### November 6, 2008
 
 - Removed demo application and moved directories to work with 'script/plugin install'.

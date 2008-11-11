@@ -23,10 +23,7 @@ begin
   rescue
   end
 
-  # pass in the JSON object with the options and the bjax source to eval...
-  # when it gets to the render method at the end, have it format a proper Juggernaut.send_to_channels
-
-  @params = ActiveSupport::JSON.decode(ARGV[0])
+  @params = Marshal.load(ARGV[0].unpack("m")[0])
   @juggernaut_channel = ARGV[2]
 
   eval("params = @params\n" + ARGV[1].unpack("m")[0])

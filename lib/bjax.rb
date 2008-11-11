@@ -7,7 +7,7 @@ class Bjax < Sproc
   
   def initialize(options, &block)
     @options = options
-    @json_params = options[:params].to_json.gsub('"',"'")
+    @marshal_params = [Marshal.dump(options[:params])].pack("m").gsub("\n","")
     @b64source = [self.source].pack("m").gsub("\n","")
     @juggernaut_channel = options[:juggernaut_channel]
     @key = options[:params][:key]
@@ -16,7 +16,7 @@ class Bjax < Sproc
     call_remote
   end
   
-  attr_accessor :options, :json_params, :id, :key
+  attr_accessor :options, :marshal_params, :id, :key
   
   def call_remote
     if Bjax.starling_available? && Bjax.workling_available?
@@ -57,13 +57,13 @@ class Bjax < Sproc
   # calls Bjax requests before juggernaut has loaded on the page.
   
   def bj_call_remote_on_localhost
-    job_task = "./script/runner " + BJAX_DIR + "/bj_runner.rb \"#{@json_params}\" \"#{@b64source}\" \"#{@juggernaut_channel}\""
+    job_task = "./script/runner " + BJAX_DIR + "/bj_runner.rb \"#{@marshal_params}\" \"#{@b64source}\" \"#{@juggernaut_channel}\""
     @job = Bj.submit job_task
     @id = "bj:" + @job.first.bj_job_id.to_s
   end
   
   def workling_call_remote
-    job_task = BjaxWorker.async_remote_runner(:json_params => @json_params, :b64source => @b64source, :juggernaut_channel => @juggernaut_channel)
+    job_task = BjaxWorker.async_remote_runner(:b64source => @b64source, :juggernaut_channel => @juggernaut_channel, :marshal_params => @marshal_params)
     @id = @job = "workling:" + job_task
   end
   
@@ -82,12 +82,8 @@ if Workling
     end
     
     def remote_runner(options)
-
-      # pass in the JSON object with the options and the bjax source to eval...
-      # when it gets to the render method at the end, have it format a proper Juggernaut.send_to_channels
-
       @uid = options[:uid]
-      @params = ActiveSupport::JSON.decode(options[:json_params])
+      @params = Marshal.load(options[:marshal_params].unpack("m")[0])
       @juggernaut_channel = options[:juggernaut_channel]
 
       eval("params = @params\n" + options[:b64source].unpack("m")[0])
