@@ -166,15 +166,15 @@ class BjaxJobPollingController < ActionController::Base
   
 end
 
-class ActionController::Routing::RouteSet 
-  def draw 
-    clear! 
-    mapper = Mapper.new(self) 
-    add_bjax_routes(mapper) 
-    yield mapper
-    named_routes.install 
-  end 
-  def add_bjax_routes(mapper) 
-    mapper.connect "/bjax_job_polling/:action/:id", :controller => 'bjax_job_polling'
-  end 
-end
+# class ActionController::Routing::RouteSet 
+#   def draw 
+#     clear! 
+#     mapper = Mapper.new(self) 
+#     add_bjax_routes(mapper) 
+#     yield mapper
+#     named_routes.install 
+#   end 
+#   def add_bjax_routes(mapper) 
+#     mapper.connect "/bjax_job_polling/:action/:id", :controller => 'bjax_job_polling'
+#   end 
+# end

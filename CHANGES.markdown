@@ -1,6 +1,7 @@
 ### November 11, 2008
 
 - Moved Bjax parameters from JSON encoding to Marshal.dump due to some translation issues.
+- Removed automatic routing, require user to modify routes.rb
 
 ### November 6, 2008
 

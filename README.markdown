@@ -107,6 +107,10 @@ Currently, Bjax is based on the [Prototype](http://www.prototypejs.org/) Javascr
 	  end
 	end
 	
+### routes.rb
+
+	map.connect "/bjax_job_polling/:action/:id", :controller => 'bjax_job_polling'
+	
 ### Seriously!?
 
 Yes! That's it. As long as you have Juggernaut, Starling, Workling, and BackgroundJob properly configured and running, Bjax handles the rest.
