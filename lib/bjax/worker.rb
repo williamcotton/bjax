@@ -12,10 +12,9 @@ if Workling
     
     def remote_runner(options)
       @uid = options[:uid]
-      @params = Marshal.load(options[:marshal_params].unpack("m")[0])
-      @juggernaut_channel = options[:juggernaut_channel]
-
-      eval("params = @params\n" + options[:b64source].unpack("m")[0])
+      params = @params = Marshal.load(options[:marshal_params].unpack("m")[0])
+      @juggernaut_channel = options[:juggernaut_channel] 
+      Marshal.load(options[:b64source].unpack("m")[0]).call
     rescue
       Workling.return.set(@uid + "-error", { :error => $! }.to_json)
       Juggernaut.send_to_channels(javascript_error_response_call(@params["key"], { :error => $! }.to_json), [@juggernaut_channel])
