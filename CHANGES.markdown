@@ -1,3 +1,7 @@
+### December 5th, 2008
+
+- Using Ruby2Ruby for serialized procs.
+
 ### November 11, 2008
 
 - Moved Bjax parameters from JSON encoding to Marshal.dump due to some translation issues.
